@@ -2,13 +2,17 @@ import React from 'react'
 
 const Footer = (props) => {
     const year = new Date().getFullYear();
+    let path = window.location.pathname;
+    let text = window.location.pathname;
     return (
-        <div className={`rounded-[30px_30px_0px_0px] ${props.className} `}>
+        <div className={`${path === "/Secontcomonent" ? "rounded-none" : "rounded-[30px_30px_0px_0px]"} ${props.className} `}>
             <div className="container pt-[78px]">
                 <div className="row w-full -mx-3 flex flex-row flex-nowrap justify-between">
                     <div className="col-6 px-3 w-1/2">
-                        <a href=""
-                            className={`font-lato font-bold text-[38px] ${props.classcolor}`}>Logo <span className=' text-white'>Here</span></a>
+                        <div className={`${text ==="/Secontcomonent" ? "text-green-600" : "text-gray-600"}`}>
+                            <a href=""
+                                className={`font-lato font-bold text-[38px] ${props.classcolor}`}>Logo <span className=' '>Here</span></a>
+                        </div>
                         <p className='max-w-[431px] font-lato font-normal text-[16px] leading-[22px] text-[#BBBBBB]'>Lorem ipsum dolor sit amet consectetur. Metus mattis cum sem integer est. Amet fringilla tristique hendrerit vestibulum diam est penatibus interdum imperdiet. Duis ut libero suspendisse arcu erat. Pulvinar in est.</p>
                     </div>
                     <div className="col-6 w-4/12 px-3">

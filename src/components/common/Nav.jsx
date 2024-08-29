@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Nav = ({ bgclassName ='bg-[#F7F7F7]'}) => {
+const Nav = ({ bgclassName = 'bg-[#F7F7F7]' }) => {
+    
     return (
         <div className={`${bgclassName} p-[26px] flex items-center justify-between`}>
             <h2 className=' font-lato font-bold text-[38px] text-black'>Logo</h2>
