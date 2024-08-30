@@ -3,6 +3,7 @@ import './App.css';
 import Firstcomponent from './components/View/Firstcomponent';
 import Secontcomonent from './components/View/Secontcomonent';
 import Nav from './components/common/Nav';
+import { SwiperSlide } from 'swiper/react';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/Secontcomonent' element={<Secontcomonent />} />
       </Routes>
     </BrowserRouter>
+
   );
 }
 

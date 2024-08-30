@@ -1,15 +1,18 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom';
 
 const Footer = (props) => {
     const year = new Date().getFullYear();
-    let path = window.location.pathname;
-    let text = window.location.pathname;
+    // let path = window.location.pathname;
+    const path = useLocation()
+    console.log("text", path)
+
     return (
-        <div className={`${path === "/Secontcomonent" ? "rounded-none" : "rounded-[30px_30px_0px_0px]"} ${props.className} `}>
+        <div className={`${path === "/Secontcomonent" ? "rounded-none bg-black" : "bg-red-800 rounded-[30px_30px_0px_0px]"} ${props.className} `}>
             <div className="container pt-[78px]">
                 <div className="row w-full -mx-3 flex flex-row flex-nowrap justify-between">
                     <div className="col-6 px-3 w-1/2">
-                        <div className={`${text ==="/Secontcomonent" ? "text-green-600" : "text-gray-600"}`}>
+                        <div className={`${path === "/Secontcomonent" ? "text-gray-600" : ""}`}>
                             <a href=""
                                 className={`font-lato font-bold text-[38px] ${props.classcolor}`}>Logo <span className=' '>Here</span></a>
                         </div>

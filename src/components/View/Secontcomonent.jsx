@@ -3,6 +3,7 @@ import React from 'react'
 import Hero from '../common/Hero'
 import { CARD } from "../common/Helper"
 import Footer from '../common/Footer'
+import SwiperSlider from '../home/SwiperSlider'
 
 
 const Secontcomonent = () => {
@@ -10,6 +11,7 @@ const Secontcomonent = () => {
         <>
             <Hero className='bg-skyBlue' />
             <div className="container mt-[135px]">
+                <SwiperSlider />
                 <h2 className=' font-inter font-semibold text-[40px] text-black text-center'>Lorem ipsum</h2>
                 <div className="flex gap-[24px] justify-center mt-[40px] mb-[106px] flex-wrap">
                     {CARD.map((i, index) => (
@@ -22,6 +24,7 @@ const Secontcomonent = () => {
                 </div>
             </div>
             <Footer className='bg-darkBlue' />
+          
 
         </>
     )
