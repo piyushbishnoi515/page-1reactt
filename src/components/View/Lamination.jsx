@@ -27,6 +27,7 @@ const Lamination = () => {
             />
             <Lottie className='w-full h-full'
                 animationData={hand}
+                play
             />
 
 
