@@ -11,11 +11,11 @@ import sliderCard3 from '../../assets/images/webp/slider-img-4.png';
 
 const SwiperSlider = () => {
     return (
-        <div className='mb-[50px]'>
+        <div className='mb-[50px] max-w-[500px] my-[200px] mx-auto'>
             <Swiper
-                effect={'cards'}
+                effect='cards'
                 grabCursor={true}
-                modules={[EffectCards, Autoplay]}  // Include Autoplay module here
+                modules={[EffectCards, Autoplay, ]} // Include all modules here
                 className="mySwiper"
                 pagination={{ clickable: true }}
                 navigation={true}
@@ -24,10 +24,10 @@ const SwiperSlider = () => {
                     disableOnInteraction: false,
                 }}
             >
-                <SwiperSlide><img src={sliderCard} alt="" /></SwiperSlide>
-                <SwiperSlide><img src={sliderCard1} alt="" /></SwiperSlide>
-                <SwiperSlide><img src={sliderCard2} alt="" /></SwiperSlide>
-                <SwiperSlide><img src={sliderCard3} alt="" /></SwiperSlide>
+                <SwiperSlide><img src={sliderCard} alt="Slide 1" /></SwiperSlide>
+                <SwiperSlide><img src={sliderCard1} alt="Slide 2" /></SwiperSlide>
+                <SwiperSlide><img src={sliderCard2} alt="Slide 3" /></SwiperSlide>
+                <SwiperSlide><img src={sliderCard3} alt="Slide 4" /></SwiperSlide>
             </Swiper>
         </div>
     );

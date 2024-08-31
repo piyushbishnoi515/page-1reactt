@@ -10,7 +10,7 @@ const Nav = ({ bgclassName = 'bg-[#F7F7F7]' }) => {
                 <ul className='flex items-center gap-[24px]'>
                     <li><Link to="/" className='font-lato font-normal text-[16px]'>Home</Link></li>
                     <li> <Link to="/Secontcomonent" className=' font-lato font-normal text-[16px]'>How It Works</Link></li>
-                    <li><a href="/" className=' font-lato font-normal text-[16px]'>Testimonials</a></li>
+                    <li><a href="/lamination" className=' font-lato font-normal text-[16px]'>Lotti</a></li>
                     <li><a href="/" className=' font-lato font-normal text-[16px]'>Why Choose Us</a></li>
 
                 </ul>
